@@ -9,6 +9,8 @@ Requires the [.NET 8 Runtime](https://dotnet.microsoft.com/en-us/download/dotnet
 
 Download the zip file for your OS from Releases and extract the binaries.
 
+Make sure xabbo is not running.
+
 On Windows you can drag your old `wardrobe.db` onto the `convert-wardrobe.exe` file.
 The figures from the database should be inserted into the new xabbo JSON wardrobe file.
 
