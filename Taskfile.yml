@@ -1,0 +1,28 @@
+# https://taskfile.dev
+
+version: '3'
+
+vars:
+  RuntimeIdentifiers: [win-x64, linux-x64, osx-x64, osx-arm64]
+
+tasks:
+  build:
+    cmds:
+      - for: [win-x64, linux-x64, osx-x64, osx-arm64]
+        task: build-for
+        vars:
+          RID: '{{.ITEM}}'
+  build-for:
+    cmds:
+      - dotnet build -c Release -r {{.RID}}
+  pack:
+    deps: [build]
+    cmds:
+      - for: [win-x64, linux-x64, osx-x64, osx-arm64]
+        task: pack-for
+        vars:
+          RID: '{{.ITEM}}'
+  pack-for:
+    cmds:
+      - mkdir -p out
+      - cd ./bin/Release/net8.0/{{.RID}} && zip -r ../../../../out/{{.RID}}.zip .
