@@ -5,6 +5,8 @@ From xabbo v1.1.0, the wardrobe is located at `%LOCALAPPDATA%\\xabbo\\wardrobe.j
 
 # How to use
 
+Requires the [.NET 8 Runtime](https://dotnet.microsoft.com/en-us/download/dotnet/8.0).
+
 Download the zip file for your OS from Releases and extract the binaries.
 
 On Windows you can drag your old `wardrobe.db` onto the `convert-wardrobe.exe` file.
