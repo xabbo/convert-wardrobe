@@ -1,7 +1,7 @@
 # convert-wardrobe
 
-On xabbo v1.0.3 and earlier, the wardrobe is named `wardrobe.db` and is stored in the same folder as the xabbo executable.\
-From xabbo v1.1.0, the wardrobe is located at `%LOCALAPPDATA%\xabbo\wardrobe.json` on Windows and `~/.local/share/xabbo/wardrobe.json` on Linux/Mac.
+On xabbo v1.0.3 and earlier, the wardrobe is stored in a LiteDB database named `wardrobe.db` in the same folder as the xabbo executable.\
+From xabbo v1.1.0, the wardrobe is stored in a JSON file located at `%LOCALAPPDATA%\xabbo\wardrobe.json` on Windows and `~/.local/share/xabbo/wardrobe.json` on Linux/Mac.
 
 # How to use
 
